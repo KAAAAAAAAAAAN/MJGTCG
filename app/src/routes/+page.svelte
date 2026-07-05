@@ -12,7 +12,7 @@
   import Chat from "$lib/Chat.svelte";
   import type { RoomEntry, Lobby, ChatMsg } from "$lib/menu/types.js";
 
-  type Screen = "menu" | "create" | "browse" | "lobby" | "game" | "demo";
+  type Screen = "menu" | "create" | "browse" | "lobby" | "game";
 
   let client: Client | null = null;
   let room: Room | null = null;
@@ -110,6 +110,7 @@
   function onBoard(e: CustomEvent<BoardAction>) { if (room) room.send("board", e.detail); else flash("not connected"); }
   function onManual(e: CustomEvent<ManualAction>) { if (room) room.send("manual", e.detail); else flash("not connected"); }
   function onChat(e: CustomEvent<string>) { room?.send("chat", e.detail); }
+  function onWrench() { /* wrench tool — action TBD (placeholder button next to the in-game chat) */ }
 </script>
 
 <header>
@@ -120,15 +121,12 @@
   {:else if screen === "lobby"}
     <span class="conn">● in lobby</span>
     <button class="leave" on:click={toMenu}>Leave</button>
-  {:else if screen === "demo"}
-    <span class="hint">demo board (offline)</span>
-    <button class="leave" on:click={toMenu}>≡ menu</button>
   {/if}
   {#if status}<span class="status" class:err={statusErr}>{status}</span>{/if}
 </header>
 
 {#if screen === "menu"}
-  <MainMenu bind:nickname on:create={() => (screen = "create")} on:join={toBrowse} on:demo={() => (screen = "demo")} />
+  <MainMenu bind:nickname on:create={() => (screen = "create")} on:join={toBrowse} />
 {:else if screen === "create"}
   <CreateGame {busy} on:create={createGame} on:back={() => (screen = "menu")} />
 {:else if screen === "browse"}
@@ -184,14 +182,13 @@
 {/if}
 
 {#if room && (screen === "lobby" || screen === "game")}
-  <Chat messages={chat} {mySeat} on:send={onChat} />
+  <Chat messages={chat} {mySeat} on:send={onChat} on:wrench={onWrench} />
 {/if}
 
 <style>
   header { display: flex; align-items: center; gap: 14px; padding: 8px 12px; border-bottom: 1px solid #232a34; }
   .brand { font: inherit; font-weight: 700; letter-spacing: 0.04em; color: #cfd6e0; background: none; border: none; cursor: pointer; padding: 0; }
   .conn { color: #8fe0b0; font-size: 12px; }
-  .hint { color: #69707c; font-size: 12px; }
   .leave { font: inherit; background: #1a212c; color: #cdd4de; border: 1px solid #39414e; border-radius: 6px; padding: 4px 11px; cursor: pointer; }
   .leave:hover { background: #222a36; }
   .status { font-size: 12px; color: #8b95a3; margin-left: auto; }
