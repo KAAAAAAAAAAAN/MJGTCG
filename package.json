@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "description": "MJGTCG online card game \u0432\u0402\u201d TypeScript engine (ported from the Python reference).",
+  "description": "MJGTCG online card game: a rules-enforcing TypeScript engine, ported from the Python reference.",
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
