@@ -31,3 +31,6 @@ Thumbs.db
 
 # Claude Code local settings (keep launch.json tracked)
 .claude/settings.local.json
+
+# local dev reference (not part of the published project)
+RULES.md
