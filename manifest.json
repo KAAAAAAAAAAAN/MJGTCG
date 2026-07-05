@@ -1,0 +1,1311 @@
+{
+  "MJG-001": {
+    "number": "001",
+    "name": "Nyagger",
+    "image": "images/Base/Main/001.png",
+    "deck": "Main",
+    "hash": "032329833035"
+  },
+  "MJG-002": {
+    "number": "002",
+    "name": "Look at this Hag!",
+    "image": "images/Base/Main/002.png",
+    "deck": "Main",
+    "hash": "3c0bb1deb024"
+  },
+  "MJG-003": {
+    "number": "003",
+    "name": "Cheese Chotto",
+    "image": "images/Base/Main/003.png",
+    "deck": "Main",
+    "hash": "a5bf19ffd0c8"
+  },
+  "AS4-PIN": {
+    "number": "004",
+    "name": "TO Here",
+    "image": "images/Base/Main/004.png",
+    "deck": "Main",
+    "hash": "0b784f0b93ed"
+  },
+  "UGR-005": {
+    "number": "005",
+    "name": "Uprisal of the Miko",
+    "image": "images/Base/Main/005.png",
+    "deck": "Main",
+    "hash": "3b8f0d3a70c7"
+  },
+  "MJG-006": {
+    "number": "006",
+    "name": "Dnruk",
+    "image": "images/Base/Main/006.png",
+    "deck": "Main",
+    "hash": "695aa2cc7207"
+  },
+  "MJG-77*": {
+    "number": "007",
+    "name": "YUZU GRAPE",
+    "image": "images/Base/Main/007.png",
+    "deck": "Main",
+    "hash": "608dd0b276cb"
+  },
+  "MJG-008": {
+    "number": "008",
+    "name": "Adeptchads ♫",
+    "image": "images/Base/Main/008.png",
+    "deck": "Main",
+    "hash": "a71b4c219b8c"
+  },
+  "FAT-009": {
+    "number": "009",
+    "name": "Koko Doko",
+    "image": "images/Base/Main/009.png",
+    "deck": "Main",
+    "hash": "8d5573f53aac"
+  },
+  "YETI-YUI": {
+    "number": "010",
+    "name": "Yagi Yui.",
+    "image": "images/Base/Main/010.png",
+    "deck": "Main",
+    "hash": "84f1c54b147b"
+  },
+  "MJG-011": {
+    "number": "011",
+    "name": "Haruna",
+    "image": "images/Base/Main/011.png",
+    "deck": "Main",
+    "hash": "31cd70c1df0b"
+  },
+  "MJG-012": {
+    "number": "012",
+    "name": "Literally Who?",
+    "image": "images/Base/Main/012.png",
+    "deck": "Main",
+    "hash": "97677f930044"
+  },
+  "MJG-013": {
+    "number": "013",
+    "name": "Banana",
+    "image": "images/Base/Main/013.png",
+    "deck": "Main",
+    "hash": "21587ce6a2bd"
+  },
+  "MJG-014": {
+    "number": "014",
+    "name": "Anon's Mom",
+    "image": "images/Base/Faith/014.png",
+    "deck": "Faith",
+    "hash": "0cfe5e434868"
+  },
+  "MJG-015": {
+    "number": "015",
+    "name": "Good Morning Sirs!",
+    "image": "images/Base/Main/015.png",
+    "deck": "Main",
+    "hash": "84ebc4f3975f"
+  },
+  "MJG-016": {
+    "number": "016",
+    "name": "ما شاء الله",
+    "image": "images/Base/Faith/016.png",
+    "deck": "Faith",
+    "hash": "119c6063ea5b"
+  },
+  "MJG-32歳": {
+    "number": "017",
+    "name": "Mommy Milkers",
+    "image": "images/Base/Main/017.png",
+    "deck": "Main",
+    "hash": "f7c44583884a"
+  },
+  "MJG-018": {
+    "number": "018",
+    "name": "Rigged Hands",
+    "image": "images/Base/Main/018.png",
+    "deck": "Main",
+    "hash": "b3130d7db614"
+  },
+  "BAK-YOU": {
+    "number": "019",
+    "name": "Friendly Only Bnuuy",
+    "image": "images/Base/Main/019.png",
+    "deck": "Main",
+    "hash": "117629ea20b8"
+  },
+  "MJG-020": {
+    "number": "020",
+    "name": "G***u",
+    "image": "images/Base/Main/020.png",
+    "deck": "Main",
+    "hash": "5f0cc5294012"
+  },
+  "MJG-021": {
+    "number": "021",
+    "name": "Justice for Lalatano",
+    "image": "images/Base/Main/021.png",
+    "deck": "Main",
+    "hash": "26eaad0f06da"
+  },
+  "MJG-022": {
+    "number": "022",
+    "name": "фX-1iWpQmFOLaF2fTф",
+    "image": "images/Base/Main/022.png",
+    "deck": "Main",
+    "hash": "792fb719ea5e"
+  },
+  "MJG-888": {
+    "number": "023",
+    "name": "Gweilo!",
+    "image": "images/Base/Main/023.png",
+    "deck": "Main",
+    "hash": "d89400a4396a"
+  },
+  "KSG-EMI": {
+    "number": "024",
+    "name": "Hotwheels",
+    "image": "images/Base/Main/024.png",
+    "deck": "Main",
+    "hash": "34a1961636e8"
+  },
+  "MJG-025": {
+    "number": "025",
+    "name": "HOLY MAHJONG",
+    "image": "images/Base/Faith/025.png",
+    "deck": "Faith",
+    "hash": "0bf66ac74d62"
+  },
+  "MJG-026": {
+    "number": "026",
+    "name": "Bravo",
+    "image": "images/Base/Main/026.png",
+    "deck": "Main",
+    "hash": "ae776faea429"
+  },
+  "MJG-027": {
+    "number": "027",
+    "name": "Swordslut",
+    "image": "images/Base/Faith/027.png",
+    "deck": "Faith",
+    "hash": "4b70157a9f15"
+  },
+  "MJG-028": {
+    "number": "028",
+    "name": "Fujoshi Doujinshi",
+    "image": "images/Base/Main/028.png",
+    "deck": "Main",
+    "hash": "02d2769ae99e"
+  },
+  "MJG-029": {
+    "number": "029",
+    "name": "YUZU YUZU YUZU",
+    "image": "images/Base/Main/029.png",
+    "deck": "Main",
+    "hash": "dbf83a193d4c"
+  },
+  "JONG-030": {
+    "number": "030",
+    "name": "I want /vt/ to leave",
+    "image": "images/Base/Main/030.png",
+    "deck": "Main",
+    "hash": "8bf18da061b1"
+  },
+  "MJG-031": {
+    "number": "031",
+    "name": "Chuuni-Sister-Daughter-Wife",
+    "image": "images/Base/Main/031.png",
+    "deck": "Main",
+    "hash": "7f8d33f97225"
+  },
+  "MJG-032": {
+    "number": "032",
+    "name": "Qingkin Kotyao",
+    "image": "images/Base/Main/032.png",
+    "deck": "Main",
+    "hash": "4423bad75176"
+  },
+  "MJG-333": {
+    "number": "033",
+    "name": "Ninpo! Triplets no Jutsu!",
+    "image": "images/Base/Main/033.png",
+    "deck": "Main",
+    "hash": "8b35f36c3bbc"
+  },
+  "MJG-117633": {
+    "number": "034",
+    "name": "June 4th Incident",
+    "image": "images/Base/Faith/034.png",
+    "deck": "Faith",
+    "hash": "c87a9aaa4083"
+  },
+  "MJG-035": {
+    "number": "035",
+    "name": "Take your meds",
+    "image": "images/Base/Main/035.png",
+    "deck": "Main",
+    "hash": "3e0e2a8331c7"
+  },
+  "MJG-036": {
+    "number": "036",
+    "name": "Touch Fluffy Tail",
+    "image": "images/Base/Faith/036.png",
+    "deck": "Faith",
+    "hash": "fac2718cc2f7"
+  },
+  "MJG-037": {
+    "number": "037",
+    "name": "AI(Steve)",
+    "image": "images/Base/Main/037.png",
+    "deck": "Main",
+    "hash": "6e35827d3c75"
+  },
+  "MJG-0w0": {
+    "number": "038",
+    "name": "BIG FLAT CAT TATS",
+    "image": "images/Base/Main/038.png",
+    "deck": "Main",
+    "hash": "1a01e717610b"
+  },
+  "MJG-039": {
+    "number": "039",
+    "name": "Ravioli Ravioli",
+    "image": "images/Base/Main/039.png",
+    "deck": "Main",
+    "hash": "66d1d4fff926"
+  },
+  "MJG-040": {
+    "number": "040",
+    "name": "Crimson Chemist",
+    "image": "images/Base/Faith/040.png",
+    "deck": "Faith",
+    "hash": "d075f5e8aaaf"
+  },
+  "MJG-041": {
+    "number": "041",
+    "name": "p*n*s",
+    "image": "images/Base/Main/041.png",
+    "deck": "Main",
+    "hash": "87e3a591e41d"
+  },
+  "MJG-042": {
+    "number": "042",
+    "name": "Resplendent Phoenix",
+    "image": "images/Base/Faith/042.png",
+    "deck": "Faith",
+    "hash": "05c587e7c4f8"
+  },
+  "MJG-043": {
+    "number": "043",
+    "name": "YJK",
+    "image": "images/Base/Main/043.png",
+    "deck": "Main",
+    "hash": "5d95dc376770"
+  },
+  "MJG-044": {
+    "number": "044",
+    "name": "Pon Yeehaw",
+    "image": "images/Base/Main/044.png",
+    "deck": "Main",
+    "hash": "19ac73ee2f43"
+  },
+  "MJG-045": {
+    "number": "045",
+    "name": "Liyuean Opera",
+    "image": "images/Base/Main/045.png",
+    "deck": "Main",
+    "hash": "877c0ffd79b7"
+  },
+  "MJG-046": {
+    "number": "046",
+    "name": "UNTZ UNTZ UNTZ UNTZ",
+    "image": "images/Base/Main/046.png",
+    "deck": "Main",
+    "hash": "ace1a34179f1"
+  },
+  "MJG-047": {
+    "number": "047",
+    "name": "Jane4",
+    "image": "images/Base/Main/047.png",
+    "deck": "Main",
+    "hash": "5e4cee2a76ef"
+  },
+  "MJG-048": {
+    "number": "048",
+    "name": "snek feet",
+    "image": "images/Base/Faith/048.png",
+    "deck": "Faith",
+    "hash": "2d7bad1e4df3"
+  },
+  "MJG-HAT": {
+    "number": "C00",
+    "name": "FU-FU-FUCK SHAMIKO",
+    "image": "images/Base/Main/C00.png",
+    "deck": "Main",
+    "hash": "b55c2e4569ae"
+  },
+  "MJG-C01": {
+    "number": "C01",
+    "name": "Cute Boy",
+    "image": "images/Base/Main/C01.png",
+    "deck": "Main",
+    "hash": "f01322780a28"
+  },
+  "SOA-C02": {
+    "number": "C02",
+    "name": "Temeraire",
+    "image": "images/Base/Main/C02.png",
+    "deck": "Main",
+    "hash": "9383bae57151"
+  },
+  "MJG-C03": {
+    "number": "C03",
+    "name": "amaekoromo-0.png",
+    "image": "images/Base/Main/C03.png",
+    "deck": "Main",
+    "hash": "5d472e16a4f9"
+  },
+  "MJG-C04": {
+    "number": "C04",
+    "name": "All My Mahjong Friends Have Died",
+    "image": "images/Base/Main/C04.png",
+    "deck": "Main",
+    "hash": "8d30605d8276"
+  },
+  "MJG-C05": {
+    "number": "C05",
+    "name": "i can't believe toki is fucking dead",
+    "image": "images/Base/Main/C05.png",
+    "deck": "Main",
+    "hash": "9ad0b538210a"
+  },
+  "MJG-C06": {
+    "number": "C06",
+    "name": "Copebots",
+    "image": "images/Base/Main/C06.png",
+    "deck": "Main",
+    "hash": "6d38b815e3fb"
+  },
+  "MJG-C07": {
+    "number": "C07",
+    "name": "ywnbaw7",
+    "image": "images/Base/Main/C07.png",
+    "deck": "Main",
+    "hash": "9940429826c1"
+  },
+  "MJG-C08": {
+    "number": "C08",
+    "name": "What are the odds...",
+    "image": "images/Base/Main/C08.png",
+    "deck": "Main",
+    "hash": "b8ff0adeb801"
+  },
+  "MJG-C09": {
+    "number": "C09",
+    "name": "i stab inside ichihime nya",
+    "image": "images/Base/Main/C09.png",
+    "deck": "Main",
+    "hash": "768abf9846c1"
+  },
+  "MJG-C10": {
+    "number": "C10",
+    "name": "Ohohojousama",
+    "image": "images/Base/Main/C10.png",
+    "deck": "Main",
+    "hash": "2283742a49ab"
+  },
+  "MJG-C11": {
+    "number": "C11",
+    "name": "Sin Titulo",
+    "image": "images/Base/Main/C11.png",
+    "deck": "Main",
+    "hash": "c770e9f9518c"
+  },
+  "MJG-C12": {
+    "number": "C12",
+    "name": "Nina Derank Stream",
+    "image": "images/Base/Main/C12.png",
+    "deck": "Main",
+    "hash": "91b947466a8a"
+  },
+  "MJG-C13": {
+    "number": "C13",
+    "name": "Magical Sands",
+    "image": "images/Base/Faith/C13.png",
+    "deck": "Faith",
+    "hash": "356f67201673"
+  },
+  "MJG-C14": {
+    "number": "C14",
+    "name": "Waschizo",
+    "image": "images/Base/Faith/C14.png",
+    "deck": "Faith",
+    "hash": "3f4428c429b8"
+  },
+  "MJG-C15": {
+    "number": "C15",
+    "name": "Kaguyahime",
+    "image": "images/Base/Main/C15.png",
+    "deck": "Main",
+    "hash": "ed50a03104bf"
+  },
+  "MJG-C16": {
+    "number": "C16",
+    "name": "The Brick",
+    "image": "images/Base/Main/C16.png",
+    "deck": "Main",
+    "hash": "61df5294e653"
+  },
+  "MJG-C17": {
+    "number": "C17",
+    "name": "Catan Bullies",
+    "image": "images/Base/Main/C17.png",
+    "deck": "Main",
+    "hash": "655b3d9edfc8"
+  },
+  "LOB-001": {
+    "number": "C18",
+    "name": "Blue-Eyes White Dragon",
+    "image": "images/Base/Main/C18.png",
+    "deck": "Main",
+    "hash": "dffbb13eaaf9"
+  },
+  "MJG-ZERO": {
+    "number": "C19",
+    "name": "The Cart Driver",
+    "image": "images/Base/Faith/C19.png",
+    "deck": "Faith",
+    "hash": "b467aecb56d7"
+  },
+  "MJG-CC": {
+    "number": "C20",
+    "name": "Pizza Hut",
+    "image": "images/Base/Faith/C20.png",
+    "deck": "Faith",
+    "hash": "d09f8ff4a2ad"
+  },
+  "MJG-C21": {
+    "number": "C21",
+    "name": "Spinzaku",
+    "image": "images/Base/Faith/C21.png",
+    "deck": "Faith",
+    "hash": "f7a56b8fff92"
+  },
+  "MJG-C22": {
+    "number": "C22",
+    "name": "Sakurai Shouichi",
+    "image": "images/Base/Faith/C22.png",
+    "deck": "Faith",
+    "hash": "60ac3617c433"
+  },
+  "MJG-C23": {
+    "number": "C23",
+    "name": "Strawberry☆Cup",
+    "image": "images/Base/Faith/C23.png",
+    "deck": "Faith",
+    "hash": "392cd462dd91"
+  },
+  "MJG-C24": {
+    "number": "C24",
+    "name": "Vanilla☆Cup",
+    "image": "images/Base/Faith/C24.png",
+    "deck": "Faith",
+    "hash": "0d957ebc090e"
+  },
+  "MJG-C25": {
+    "number": "C25",
+    "name": "Chocolate☆Cup",
+    "image": "images/Base/Faith/C25.png",
+    "deck": "Faith",
+    "hash": "fa1a6136962e"
+  },
+  "MJG-C26": {
+    "number": "C26",
+    "name": "Cum☆Chalice",
+    "image": "images/Base/Faith/C26.png",
+    "deck": "Faith",
+    "hash": "3c7ff677187e"
+  },
+  "MJG-FOX": {
+    "number": "C27",
+    "name": "Wolfseggs",
+    "image": "images/Base/Main/C27.png",
+    "deck": "Main",
+    "hash": "ee6cf5e35ba4"
+  },
+  "MJG-C28": {
+    "number": "C28",
+    "name": "Ojisan",
+    "image": "images/Base/Main/C28.png",
+    "deck": "Main",
+    "hash": "11a324e33118"
+  },
+  "MJG-C29": {
+    "number": "C29",
+    "name": "DealinDemon",
+    "image": "images/Base/Main/C29.png",
+    "deck": "Main",
+    "hash": "18f46ce48476"
+  },
+  "MSGK-C30": {
+    "number": "C30",
+    "name": "Mutsugaki",
+    "image": "images/Base/Main/C30.png",
+    "deck": "Main",
+    "hash": "9c0e21f88fc3"
+  },
+  "MJG-C31": {
+    "number": "C31",
+    "name": "Koito Big Koitus",
+    "image": "images/Base/Main/C31.png",
+    "deck": "Main",
+    "hash": "4df152b032d9"
+  },
+  "MJG-C32": {
+    "number": "C32",
+    "name": "Hanana",
+    "image": "images/Base/Main/C32.png",
+    "deck": "Main",
+    "hash": "77932210d693"
+  },
+  "MJG-C33": {
+    "number": "C33",
+    "name": "Puella Magi Madoka Higuchika",
+    "image": "images/Base/Main/C33.png",
+    "deck": "Main",
+    "hash": "4662af79bfff"
+  },
+  "MJG-C34": {
+    "number": "C34",
+    "name": "No",
+    "image": "images/Base/Main/C34.png",
+    "deck": "Main",
+    "hash": "7dd9a8e8c5d6"
+  },
+  "MJG-WAN": {
+    "number": "M01",
+    "name": "Mistakes into Miracles",
+    "image": "images/Base/Faith/M01.png",
+    "deck": "Faith",
+    "hash": "5f5e16213f73"
+  },
+  "MJG-M02": {
+    "number": "M02",
+    "name": "I'm at the bar...",
+    "image": "images/Base/Main/M02.png",
+    "deck": "Main",
+    "hash": "ff387bd5d417"
+  },
+  "MJG-M03": {
+    "number": "M03",
+    "name": "Senba Crow",
+    "image": "images/Base/Main/M03.png",
+    "deck": "Main",
+    "hash": "8b7d07eb931d"
+  },
+  "MJG-M04": {
+    "number": "M04",
+    "name": "RUSSIAN",
+    "image": "images/Base/Main/M04.png",
+    "deck": "Main",
+    "hash": "7c7fb53d248a"
+  },
+  "MJG-M05": {
+    "number": "M05",
+    "name": "CEOofLuckshitting",
+    "image": "images/Base/Faith/M05.png",
+    "deck": "Faith",
+    "hash": "9a65ed8927c5"
+  },
+  "MJG-M06": {
+    "number": "M06",
+    "name": "Szocjidgdgiharaze",
+    "image": "images/Base/Main/M06.png",
+    "deck": "Main",
+    "hash": "2e6d10ef1530"
+  },
+  "MJG-M07": {
+    "number": "M07",
+    "name": "El Primer Furry",
+    "image": "images/Base/Main/M07.png",
+    "deck": "Main",
+    "hash": "384c6c54be07"
+  },
+  "MJG-M08": {
+    "number": "M08",
+    "name": "Friendly Uncle",
+    "image": "images/Base/Main/M08.png",
+    "deck": "Main",
+    "hash": "f359e5bc06bc"
+  },
+  "MJG-M09": {
+    "number": "M09",
+    "name": "It's Actually Over",
+    "image": "images/Base/Main/M09.png",
+    "deck": "Main",
+    "hash": "03686286b11a"
+  },
+  "MJG-M10": {
+    "number": "M10",
+    "name": "GrinchChads",
+    "image": "images/Base/Main/M10.png",
+    "deck": "Main",
+    "hash": "77e7b4d04559"
+  },
+  "MJG-M11": {
+    "number": "M11",
+    "name": "My /mjg/ Crush",
+    "image": "images/Base/Main/M11.png",
+    "deck": "Main",
+    "hash": "4d5aeed6b49e"
+  },
+  "MJG-M12": {
+    "number": "M12",
+    "name": "i'm in your walls",
+    "image": "images/Base/Main/M12.png",
+    "deck": "Main",
+    "hash": "8df259093d03"
+  },
+  "MJG-M13": {
+    "number": "M13",
+    "name": "Famous Fagat",
+    "image": "images/Base/Main/M13.png",
+    "deck": "Main",
+    "hash": "bd518b01eebe"
+  },
+  "MJG-M14": {
+    "number": "M14",
+    "name": "Divegrass is Ruined!",
+    "image": "images/Base/Main/M14.png",
+    "deck": "Main",
+    "hash": "a24ad73f725f"
+  },
+  "MJG-M15": {
+    "number": "M15",
+    "name": "Sechs with Zechs",
+    "image": "images/Base/Main/M15.png",
+    "deck": "Main",
+    "hash": "1892d88c4916"
+  },
+  "MJG-M16": {
+    "number": "M16",
+    "name": "Mixing Magic",
+    "image": "images/Base/Main/M16.png",
+    "deck": "Main",
+    "hash": "68fe78c35f90"
+  },
+  "HTTP-404": {
+    "number": "M17",
+    "name": "The Hacker known as 4chan",
+    "image": "images/Base/Main/M17.png",
+    "deck": "Main",
+    "hash": "e7fa737724a0"
+  },
+  "MJG-M18": {
+    "number": "M18",
+    "name": "El Negro Kang",
+    "image": "images/Base/Main/M18.png",
+    "deck": "Main",
+    "hash": "33e13621512e"
+  },
+  "MJG-M19": {
+    "number": "M19",
+    "name": "Flow Book 1",
+    "image": "images/Base/Main/M19.png",
+    "deck": "Main",
+    "hash": "a15a2c84ae43"
+  },
+  "MJG-M20": {
+    "number": "M20",
+    "name": "Ya Boy",
+    "image": "images/Base/Main/M20.png",
+    "deck": "Main",
+    "hash": "715da47b3b0d"
+  },
+  "MJG-M21": {
+    "number": "M21",
+    "name": "The Jongker",
+    "image": "images/Base/Main/M21.png",
+    "deck": "Main",
+    "hash": "dd7d50246f9c"
+  },
+  "MJG-M22": {
+    "number": "M22",
+    "name": "Majsoul Secret Room",
+    "image": "images/Base/Main/M22.png",
+    "deck": "Main",
+    "hash": "26bb4fb991c4"
+  },
+  "MJG-M23": {
+    "number": "M23",
+    "name": "Elegant",
+    "image": "images/Base/Main/M23.png",
+    "deck": "Main",
+    "hash": "3c3697a90052"
+  },
+  "NYA-000": {
+    "number": "X00",
+    "name": "BIG ICHIHIME",
+    "image": "images/Base/X00.png",
+    "deck": "Base",
+    "hash": "33693b02de35"
+  },
+  "NYA-001": {
+    "number": "X01",
+    "name": "love",
+    "image": "images/Base/Faith/X01.png",
+    "deck": "Faith",
+    "hash": "a77bf9e8c6fc"
+  },
+  "MJG-410": {
+    "number": "X02",
+    "name": "Blood Sprout",
+    "image": "images/Base/Faith/X02.png",
+    "deck": "Faith",
+    "hash": "fccf432f7ddf"
+  },
+  "MJG-C18": {
+    "number": "X04",
+    "name": "Blue-Eyes Ultimate Dragon",
+    "image": "images/Base/Faith/X04.png",
+    "deck": "Faith",
+    "hash": "68a34972ec02"
+  },
+  "SHA-001": {
+    "number": "X05",
+    "name": "Shamiko",
+    "image": "images/Base/Faith/X05.png",
+    "deck": "Faith",
+    "hash": "293c98e023d4"
+  },
+  "MJG-000": {
+    "number": "XXX",
+    "name": "Freed Jyanshi",
+    "image": "images/Base/Faith/XXX.png",
+    "deck": "Faith",
+    "hash": "80886ca0561e"
+  },
+  "NYA-999": {
+    "number": "X99",
+    "name": "Catbox",
+    "image": "images/Base/Faith/X99.png",
+    "deck": "Faith",
+    "hash": "d64c75316beb"
+  },
+  "MTG-001": {
+    "number": "X03",
+    "name": "Counterspell",
+    "image": "images/Base/Faith/X03.png",
+    "deck": "Faith",
+    "hash": "de2eb809a474"
+  },
+  "MOON-001": {
+    "number": "Z01",
+    "name": "Mooncakes",
+    "image": "images/Base/Main/Z01.png",
+    "deck": "Main",
+    "hash": "d64c75316beb"
+  },
+  "MJG-L01": {
+    "number": "L01",
+    "name": "Fate/stay noten",
+    "image": "images/League/L01.png",
+    "deck": "League",
+    "hash": "7ca3b50ad660"
+  },
+  "MJG-L02": {
+    "number": "L02",
+    "name": ">The >Winning >Team",
+    "image": "images/League/L02.png",
+    "deck": "League",
+    "hash": "8963b25c5dfb"
+  },
+  "MJG-L03": {
+    "number": "L03",
+    "name": "U-NEXT Pirates",
+    "image": "images/League/L03.png",
+    "deck": "League",
+    "hash": "dfda8191ba88"
+  },
+  "MJG-L04": {
+    "number": "L04",
+    "name": "Team FLOW",
+    "image": "images/League/L04.png",
+    "deck": "League",
+    "hash": "52c405e28041"
+  },
+  "MJG-L05": {
+    "number": "L05",
+    "name": "Damafia",
+    "image": "images/League/L05.png",
+    "deck": "League",
+    "hash": "29cd343c726c"
+  },
+  "MJG-L06": {
+    "number": "L06",
+    "name": "Team 6",
+    "image": "images/League/L06.png",
+    "deck": "League",
+    "hash": "1678e6d2decc"
+  },
+  "MJG-L07": {
+    "number": "L07",
+    "name": "The Purest Team of Love",
+    "image": "images/League/L07.png",
+    "deck": "League",
+    "hash": "5b81f841eb5e"
+  },
+  "MJG-L08": {
+    "number": "L08",
+    "name": "Just According to Keikaku",
+    "image": "images/League/L08.png",
+    "deck": "League",
+    "hash": "9364a185ae0e"
+  },
+  "MJG-L09": {
+    "number": "L09",
+    "name": "Doragon Slayers",
+    "image": "images/League/L09.png",
+    "deck": "League",
+    "hash": "b6cd50d699d6"
+  },
+  "MJG-L10": {
+    "number": "L10",
+    "name": "E̶b̘̩͙̱̖͟o̺l̢̜̙a͞ ̰͞B̦̭̭o̫͈̰̠i̸s͈̣̣̼",
+    "image": "images/League/L10.png",
+    "deck": "League",
+    "hash": "b4aae4626ef6"
+  },
+  "MJG-L11": {
+    "number": "L11",
+    "name": "CoolDogz",
+    "image": "images/League/L11.png",
+    "deck": "League",
+    "hash": "c32440a38594"
+  },
+  "MJG-L12": {
+    "number": "L12",
+    "name": "A.U.T.I.S.M.",
+    "image": "images/League/L12.png",
+    "deck": "League",
+    "hash": "7e07f2da8a82"
+  },
+  "MJG-L13": {
+    "number": "L13",
+    "name": "Nyakuza",
+    "image": "images/League/L13.png",
+    "deck": "League",
+    "hash": "3ff4a4a26e64"
+  },
+  "MJG-L14": {
+    "number": "L14",
+    "name": "JANTAMABROS!?",
+    "image": "images/League/L14.png",
+    "deck": "League",
+    "hash": "d326bf8e68d3"
+  },
+  "MJG-L15": {
+    "number": "L15",
+    "name": "Fried Ginsens",
+    "image": "images/League/L15.png",
+    "deck": "League",
+    "hash": "2db6f0469bff"
+  },
+  "MJG-L16": {
+    "number": "L16",
+    "name": "Unidentified Mahjong Adept",
+    "image": "images/League/L16.png",
+    "deck": "League",
+    "hash": "5fec0bc4f159"
+  },
+  "MJG-L17": {
+    "number": "L17",
+    "name": "Riichima Financial Group",
+    "image": "images/League/L17.png",
+    "deck": "League",
+    "hash": "64a431e86c0c"
+  },
+  "MJG-L18": {
+    "number": "L18",
+    "name": "Akochan Watching Club",
+    "image": "images/League/L18.png",
+    "deck": "League",
+    "hash": "851a63429c12"
+  },
+  "MJG-L19": {
+    "number": "L19",
+    "name": "Mahjong Musketeers",
+    "image": "images/League/L19.png",
+    "deck": "League",
+    "hash": "4c5ab3cfba51"
+  },
+  "MJG-L20": {
+    "number": "L20",
+    "name": "Tendies",
+    "image": "images/League/L20.png",
+    "deck": "League",
+    "hash": "c54f1a217792"
+  },
+  "MJG-L21": {
+    "number": "L21",
+    "name": "Riichi Dicks",
+    "image": "images/League/L21.png",
+    "deck": "League",
+    "hash": "0acf8c84fade"
+  },
+  "MJG-L22": {
+    "number": "L22",
+    "name": "Gay Bandits",
+    "image": "images/League/L22.png",
+    "deck": "League",
+    "hash": "3dbecc18e7ae"
+  },
+  "MJG-L23": {
+    "number": "L23",
+    "name": "G̴͕̑r̶̮͒a̸͓̥̅n̷̫̳̓͋o̸̩͠ľ̴͉̌å̷̪͓͝ ̸̰̬̓̐B̶͔̂̍o̷̜͓͊̃ḭ̵̯̾s̵̯̓̚",
+    "image": "images/League/L23.png",
+    "deck": "League",
+    "hash": "1ac472dd4782"
+  },
+  "MJG-L24": {
+    "number": "L24",
+    "name": "Kani Kartel",
+    "image": "images/League/L24.png",
+    "deck": "League",
+    "hash": "b59dadc6616d"
+  },
+  "MJG-L25": {
+    "number": "L25",
+    "name": "TIPPED",
+    "image": "images/League/L25.png",
+    "deck": "League",
+    "hash": "dfe5033ea138"
+  },
+  "MJG-L26": {
+    "number": "L26",
+    "name": "♂️DEEP♂️DARK♂️FANTASY♂️",
+    "image": "images/League/L26.png",
+    "deck": "League",
+    "hash": "016a014add55"
+  },
+  "MJG-L27": {
+    "number": "L27",
+    "name": "NoAdept MechSoullessus",
+    "image": "images/League/L27.png",
+    "deck": "League",
+    "hash": "51b73cbbf204"
+  },
+  "MJG-L28": {
+    "number": "L28",
+    "name": "Terrible Frenchmen",
+    "image": "images/League/L28.png",
+    "deck": "League",
+    "hash": "ccbb8afec114"
+  },
+  "MJG-L29": {
+    "number": "L29",
+    "name": "NYANDERTHALS",
+    "image": "images/League/L29.png",
+    "deck": "League",
+    "hash": "812adb61bb31"
+  },
+  "MJG-L30": {
+    "number": "L30",
+    "name": "Forbidden Sandshoku",
+    "image": "images/League/L30.png",
+    "deck": "League",
+    "hash": "a0da98e6568f"
+  },
+  "MJG-L31": {
+    "number": "L31",
+    "name": "Red 5 District",
+    "image": "images/League/L31.png",
+    "deck": "League",
+    "hash": "29f721919d8b"
+  },
+  "MJG-L32": {
+    "number": "L32",
+    "name": "All Season OC Missing Club",
+    "image": "images/League/L32.png",
+    "deck": "League",
+    "hash": "1be81e9a42f5"
+  },
+  "MJG-L33": {
+    "number": "L33",
+    "name": "Renchan Research Institute",
+    "image": "images/League/L33.png",
+    "deck": "League",
+    "hash": "990dc118ea86"
+  },
+  "MJG-L34": {
+    "number": "L34",
+    "name": "Alicons",
+    "image": "images/League/L34.png",
+    "deck": "League",
+    "hash": "2d413380547e"
+  },
+  "MJG-L35": {
+    "number": "L35",
+    "name": "Gangam Name",
+    "image": "images/League/L35.png",
+    "deck": "League",
+    "hash": "06a6cf92166e"
+  },
+  "MJG-L36": {
+    "number": "L36",
+    "name": "The Road to El Dorado",
+    "image": "images/League/L36.png",
+    "deck": "League",
+    "hash": "074885bfeb8c"
+  },
+  "MJG-L37": {
+    "number": "L37",
+    "name": "What the fuck is furiten?",
+    "image": "images/League/L37.png",
+    "deck": "League",
+    "hash": "96ffa24ba20e"
+  },
+  "MJG-L38": {
+    "number": "L38",
+    "name": "Anonymous Alcoholics Association",
+    "image": "images/League/L38.png",
+    "deck": "League",
+    "hash": "d5ce62566c52"
+  },
+  "MJG-L39": {
+    "number": "L39",
+    "name": "Boomers",
+    "image": "images/League/L39.png",
+    "deck": "League",
+    "hash": "c0ce96df0a41"
+  },
+  "MJG-L40": {
+    "number": "L40",
+    "name": "Team Shamiko 7",
+    "image": "images/League/L40.png",
+    "deck": "League",
+    "hash": "1262f86a411a"
+  },
+  "MJG-L41": {
+    "number": "L41",
+    "name": "Japaniizu Goburins",
+    "image": "images/League/L41.png",
+    "deck": "League",
+    "hash": "799322348639"
+  },
+  "MJG-L42": {
+    "number": "L42",
+    "name": "Children of the Cult",
+    "image": "images/League/L42.png",
+    "deck": "League",
+    "hash": "86e1b0aa28da"
+  },
+  "MJG-L43": {
+    "number": "L43",
+    "name": "世界璽楊絶魔連合天上天下唯我独猫‐苦麗慈威猫達",
+    "image": "images/League/L43.png",
+    "deck": "League",
+    "hash": "88569bf6c864"
+  },
+  "MJG-L44": {
+    "number": "L44",
+    "name": "Mangan Motorboating",
+    "image": "images/League/L44.png",
+    "deck": "League",
+    "hash": "2208b347d21f"
+  },
+  "MJG-L45": {
+    "number": "L45",
+    "name": "My Little Witch Cannot be That Cunny",
+    "image": "images/League/L45.png",
+    "deck": "League",
+    "hash": "02951c49306f"
+  },
+  "MJG-L46": {
+    "number": "L46",
+    "name": "Legend of the Theme 1 + Theme 2",
+    "image": "images/League/L46.png",
+    "deck": "League",
+    "hash": "2dd8818a1ed0"
+  },
+  "MJG-L47": {
+    "number": "L47",
+    "name": "Dora! Dora! Dora!",
+    "image": "images/League/L47.png",
+    "deck": "League",
+    "hash": "882aa494dca0"
+  },
+  "MJG-L48": {
+    "number": "L48",
+    "name": "Absolutely Devilish",
+    "image": "images/League/L48.png",
+    "deck": "League",
+    "hash": "c02e94e207c0"
+  },
+  "MJG-L49": {
+    "number": "L49",
+    "name": "Riichi Shitty",
+    "image": "images/League/L49.png",
+    "deck": "League",
+    "hash": "c34dd4343cd4"
+  },
+  "MJG-L50": {
+    "number": "L50",
+    "name": "Fake News",
+    "image": "images/League/L50.png",
+    "deck": "League",
+    "hash": "3c7e302e75f6"
+  },
+  "MJG-L51": {
+    "number": "L51",
+    "name": "Darkest D'Mahten",
+    "image": "images/League/L51.png",
+    "deck": "League",
+    "hash": "7ad37668b57d"
+  },
+  "MJG-L52": {
+    "number": "L52",
+    "name": "Magic Isn't Real",
+    "image": "images/League/L52.png",
+    "deck": "League",
+    "hash": "e61d1b01a799"
+  },
+  "MJG-L53": {
+    "number": "L53",
+    "name": "Pontifihags",
+    "image": "images/League/L53.png",
+    "deck": "League",
+    "hash": "bbfb32000c92"
+  },
+  "MJG-L54": {
+    "number": "L54",
+    "name": "Terminal Chi",
+    "image": "images/League/L54.png",
+    "deck": "League",
+    "hash": "c11e3715c417"
+  },
+  "MJG-L55": {
+    "number": "L55",
+    "name": "Nya2keks",
+    "image": "images/League/L55.png",
+    "deck": "League",
+    "hash": "8e5d668a9726"
+  },
+  "MJG-L56": {
+    "number": "L56",
+    "name": "U.G.R. <DONG>",
+    "image": "images/League/L56.png",
+    "deck": "League",
+    "hash": "6ae8ab182328"
+  },
+  "MJG-L57": {
+    "number": "L57",
+    "name": "DoragonculaSUCCshitters",
+    "image": "images/League/L57.png",
+    "deck": "League",
+    "hash": "951091ba696e"
+  },
+  "MJG-L58": {
+    "number": "L58",
+    "name": "Do you know Oyashiro-sama?",
+    "image": "images/League/L58.png",
+    "deck": "League",
+    "hash": "09ae379372e6"
+  },
+  "MJG-L59": {
+    "number": "L59",
+    "name": "iDOLM@STER Cinderella Girls: U149",
+    "image": "images/League/L59.png",
+    "deck": "League",
+    "hash": "53ba6cfc66ef"
+  },
+  "MJG-L60": {
+    "number": "L60",
+    "name": "天上太阳红彤彤",
+    "image": "images/League/L60.png",
+    "deck": "League",
+    "hash": "16595646ea2d"
+  },
+  "MJG-L61": {
+    "number": "L61",
+    "name": "Dealer SEX",
+    "image": "images/League/L61.png",
+    "deck": "League",
+    "hash": "7dadc928a504"
+  },
+  "MJG-L62": {
+    "number": "L62",
+    "name": "Joko Doko?",
+    "image": "images/League/L62.png",
+    "deck": "League",
+    "hash": "6fdf2c2cef23"
+  },
+  "MJG-L63": {
+    "number": "L63",
+    "name": "100% Doko Juice",
+    "image": "images/League/L63.png",
+    "deck": "League",
+    "hash": "4bed672939b2"
+  },
+  "MJG-L64": {
+    "number": "L64",
+    "name": "Mahjong Crimes",
+    "image": "images/League/L64.png",
+    "deck": "League",
+    "hash": "e381b14a1931"
+  },
+  "MJG-L65": {
+    "number": "L65",
+    "name": "Glow in the Dark",
+    "image": "images/League/L65.png",
+    "deck": "League",
+    "hash": "99ed0695ecca"
+  },
+  "MJG-L66": {
+    "number": "L66",
+    "name": "一hime",
+    "image": "images/League/L66.png",
+    "deck": "League",
+    "hash": "25dd3d91c2a3"
+  },
+  "MJG-L67": {
+    "number": "L67",
+    "name": "Grinch Crusaders",
+    "image": "images/League/L67.png",
+    "deck": "League",
+    "hash": "c4a3355b9408"
+  },
+  "MJG-L68": {
+    "number": "L68",
+    "name": "The Knyaghts who Get Mated",
+    "image": "images/League/L68.png",
+    "deck": "League",
+    "hash": "47790f8d1f09"
+  },
+  "MJG-L69": {
+    "number": "L69",
+    "name": "Clown World",
+    "image": "images/League/L69.png",
+    "deck": "League",
+    "hash": "22eb40866253"
+  },
+  "MJG-L70": {
+    "number": "L70",
+    "name": "League L70",
+    "image": "images/League/L70.png",
+    "deck": "League",
+    "hash": "6577e4304a39"
+  },
+  "MJG-L71": {
+    "number": "L71",
+    "name": "Shadowrealmed",
+    "image": "images/League/L71.png",
+    "deck": "League",
+    "hash": "568def19b2fd"
+  },
+  "MJG-L72": {
+    "number": "L72",
+    "name": "DDDDDDDDDDDDDDDDD",
+    "image": "images/League/L72.png",
+    "deck": "League",
+    "hash": "01cefe893b12"
+  }
+}

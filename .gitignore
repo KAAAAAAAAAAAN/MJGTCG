@@ -1,0 +1,33 @@
+# Node / TypeScript
+node_modules/
+dist/
+dist-web/
+*.tsbuildinfo
+
+# SvelteKit app
+app/.svelte-kit/
+app/build/
+app/.vercel/
+app/static/images/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Claude Code local settings (keep launch.json tracked)
+.claude/settings.local.json

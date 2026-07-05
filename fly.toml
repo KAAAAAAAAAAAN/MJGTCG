@@ -1,0 +1,25 @@
+# Fly.io config for the MJGTCG game server (Colyseus over WebSockets).
+# First time:  fly launch --no-deploy   (sets `app` + `primary_region` below)
+# Deploy:      fly deploy
+# The client (Cloudflare Pages) then points VITE_SERVER_URL at wss://<app>.fly.dev
+app = "mjgtcg"                 # <- fly launch will set/replace this to your unique app name
+primary_region = "iad"         # <- pick a region near your players (e.g. iad, lhr, fra, syd)
+
+[build]
+  dockerfile = "Dockerfile"
+
+[http_service]
+  internal_port = 2567         # the server listens here (PORT is unset on Fly -> falls back to 2567)
+  force_https = true           # so the browser can open a secure wss:// connection
+  # a game server must stay up for live WebSocket sessions — do NOT auto-stop idle machines
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 1
+  [http_service.concurrency]
+    type = "connections"
+    hard_limit = 250
+    soft_limit = 200
+
+[[vm]]
+  size = "shared-cpu-1x"   # 1 shared core — a turn-based server is near-idle
+  memory = "512mb"         # headroom for Node + card data + rooms (256mb also works for light use)

@@ -1,0 +1,18 @@
+# the server image needs only src/ + the JSON data files. Everything else is
+# client-only, dev tooling, or bulky assets.
+node_modules
+app
+images
+build
+dist-web
+.git
+.claude
+*.test.ts
+**/*.test.ts
+__pycache__
+*.py
+MJGTCG.xlsx
+_*.txt
+_*.json
+RULES.md
+.svelte-kit
