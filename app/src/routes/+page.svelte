@@ -54,6 +54,7 @@
     r.onMessage("kicked", () => flash("you were kicked by the host"));
     r.onMessage("chatHistory", (h: ChatMsg[]) => (chat = h ?? []));
     r.onMessage("chat", (m: ChatMsg) => (chat = [...chat, m].slice(-200)));
+    r.onMessage("bugAck", (a: { ok: boolean; reason?: string }) => flash(a.ok ? "bug report sent — thanks!" : a.reason ?? "couldn't send report", !a.ok));
     r.onLeave(() => { // kick / dropped connection (not our own Leave button)
       if (leaving) return;
       room = null; live = null; manualLive = null; lobby = null; mySeat = null; screen = "menu"; chat = [];
@@ -110,7 +111,7 @@
   function onBoard(e: CustomEvent<BoardAction>) { if (room) room.send("board", e.detail); else flash("not connected"); }
   function onManual(e: CustomEvent<ManualAction>) { if (room) room.send("manual", e.detail); else flash("not connected"); }
   function onChat(e: CustomEvent<string>) { room?.send("chat", e.detail); }
-  function onWrench() { /* wrench tool — action TBD (placeholder button next to the in-game chat) */ }
+  function onBug(e: CustomEvent<string>) { if (room) room.send("bugReport", e.detail); else flash("not connected"); }
 </script>
 
 <header>
@@ -182,7 +183,7 @@
 {/if}
 
 {#if room && (screen === "lobby" || screen === "game")}
-  <Chat messages={chat} {mySeat} on:send={onChat} on:wrench={onWrench} />
+  <Chat messages={chat} {mySeat} on:send={onChat} on:bug={onBug} />
 {/if}
 
 <style>

@@ -90,6 +90,7 @@ export class GameRoom extends Room {
   private ready = new Set<number>(); // non-host seats that have readied up
   private chat: { seat: number; name: string; text: string }[] = []; // room chat (players + spectators)
   private nameByClient = new Map<string, string>(); // sessionId -> nickname (players AND spectators)
+  private lastBugAt = new Map<string, number>(); // sessionId -> last bug-report time (anti-spam)
 
   override onCreate(options: { players?: number; isPrivate?: boolean; mode?: GameMode; cheats?: boolean; league?: boolean }): void {
     this.targetPlayers = Math.max(2, Math.min(4, Math.floor(options?.players ?? 2)));
@@ -223,9 +224,45 @@ export class GameRoom extends Room {
       if (this.chat.length > 200) this.chat = this.chat.slice(-200); // cap history
       this.broadcast("chat", { seat, name, text: msg });
     });
+    // bug report: any client (player or spectator) sends free text; the server
+    // attaches context and forwards it to the Discord webhook (if configured).
+    this.onMessage("bugReport", (client: Client, text: unknown) => {
+      if (typeof text !== "string") return;
+      const msg = text.trim().slice(0, 1800); // Discord content cap is 2000; leave room for the context line
+      if (!msg) return;
+      const now = Date.now();
+      const last = this.lastBugAt.get(client.sessionId) ?? 0;
+      if (now - last < 15000) { client.send("bugAck", { ok: false, reason: "please wait a few seconds between reports" }); return; }
+      this.lastBugAt.set(client.sessionId, now);
+      const seat = this.seatByClient.get(client.sessionId) ?? SPECTATOR;
+      const name = this.nameByClient.get(client.sessionId) ?? "Anon";
+      void this.forwardBugReport({ code: this.code, roomId: this.roomId, seat, name, text: msg });
+      client.send("bugAck", { ok: true });
+    });
     // clients request their current state after registering handlers (avoids a
     // join-time race where the first push arrives before listeners exist)
     this.onMessage("sync", (client: Client) => this.sendState(client));
+  }
+
+  /** POST a bug report to the Discord webhook in DISCORD_BUG_WEBHOOK. When the env
+   *  var is unset (e.g. local dev) the report is just logged, so nothing crashes. */
+  private async forwardBugReport(r: { code: string; roomId: string; seat: number; name: string; text: string }): Promise<void> {
+    const who = r.seat === SPECTATOR ? "spectator" : `P${r.seat}`;
+    const header = `🐛 **Bug report** — room \`${r.code}\` (${r.roomId}) · ${r.name} [${who}]`;
+    const content = `${header}\n${r.text}`.slice(0, 2000);
+    const url = process.env.DISCORD_BUG_WEBHOOK;
+    if (!url) { console.log(`[bug report] (DISCORD_BUG_WEBHOOK not set)\n${content}`); return; }
+    try {
+      // allowed_mentions parse:[] neutralises any @everyone/@here in the free text
+      const res = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ content, allowed_mentions: { parse: [] } }),
+      });
+      if (!res.ok) console.error(`[bug report] webhook POST failed: ${res.status} ${res.statusText}`);
+    } catch (e) {
+      console.error("[bug report] webhook error:", e);
+    }
   }
 
   /** Host = lowest occupied seat (the creator, or the next seat if they leave). */
