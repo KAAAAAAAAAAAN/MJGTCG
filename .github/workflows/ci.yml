@@ -1,0 +1,38 @@
+name: CI
+
+# Runs on every push to main and on every pull request, so a PR that breaks
+# the engine, types, or the client build shows a red ✗ before it can be merged.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            app/package-lock.json
+
+      # --- engine + server ---
+      - name: Install (root)
+        run: npm ci
+      - name: Typecheck (engine + server)
+        run: npm run typecheck
+      - name: Tests
+        run: npm test
+
+      # --- client ---
+      - name: Install (client)
+        run: npm --prefix app ci
+      - name: Svelte type-check
+        run: npm --prefix app run check
+      - name: Client build
+        run: npm --prefix app run build

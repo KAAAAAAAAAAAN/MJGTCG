@@ -1,0 +1,39 @@
+MIT License
+
+Copyright (c) 2026 KAAAAAAAAAAAN and the MJGTCG contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-------------------------------------------------------------------------------
+
+ASSET AND TRADEMARK NOTICE
+
+MJGTCG is a non-commercial fan project. The MIT license above applies ONLY to
+the original source code in this repository (the TypeScript engine, the
+SvelteKit client, the Colyseus server, and related tooling).
+
+It does NOT apply to the game assets. The card artwork, card and character
+names, likenesses, flavour text, and other game references in this repository
+are modified from, or make reference to, third-party video games and other
+media, and remain the property of their respective copyright and trademark
+owners. No ownership, copyright, or trademark over those assets is claimed
+here; they are included only as a non-commercial, transformative fan work.
+
+Nothing in the MIT license grants any rights to those third-party assets. If
+you are a rights holder and would like something removed, please open an issue.
