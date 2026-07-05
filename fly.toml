@@ -4,7 +4,7 @@
 #
 
 app = 'mjgtcg'
-primary_region = 'iad'
+primary_region = 'fra'   # Frankfurt — close to the players (Europe); low WebSocket latency
 
 [build]
   dockerfile = 'Dockerfile'
