@@ -10,7 +10,7 @@ primary_region = 'iad'
   dockerfile = 'Dockerfile'
 
 [http_service]
-  internal_port = 8080
+  internal_port = 2567   # the server listens on 2567 (Colyseus default / Dockerfile EXPOSE); Fly must route here
   force_https = true
   auto_stop_machines = 'off'
   auto_start_machines = true
