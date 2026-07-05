@@ -242,6 +242,14 @@ export class GameRoom extends Room {
     // clients request their current state after registering handlers (avoids a
     // join-time race where the first push arrives before listeners exist)
     this.onMessage("sync", (client: Client) => this.sendState(client));
+    // Tolerate unknown message types. Colyseus otherwise disconnects the client
+    // with WS_CLOSE_WITH_ERROR on an unregistered type (production mode), so a
+    // client newer than the server — e.g. mid-deploy, when the client host
+    // (Cloudflare) updates before the server host (Fly) — would be dropped mid-game.
+    // Registering a catch-all makes the server ignore what it doesn't understand.
+    this.onMessage("*", (_client: Client, type: string | number) => {
+      console.warn(`[room ${this.roomId}] ignoring unknown message type: ${String(type)}`);
+    });
   }
 
   /** POST a bug report to the Discord webhook in DISCORD_BUG_WEBHOOK. When the env
