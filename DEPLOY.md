@@ -63,6 +63,12 @@ Save and deploy. Your game is live at `https://<project>.pages.dev`.
   Pages.
 - Changing `VITE_SERVER_URL` requires a **rebuild** (it's baked in at build time). Set it before
   the first build; if you change the server URL later, trigger a new Pages deploy.
+- **Custom domain (optional):** in the Pages project → **Custom domains → Set up a custom
+  domain**, add e.g. `mjg-tcg.cc`; Cloudflare provisions DNS + TLS automatically. The client keeps
+  connecting to the same `wss://…fly.dev` server (a different origin — the server has no origin
+  restriction), so **no rebuild is needed** unless you also move the *server* onto a custom
+  subdomain (e.g. `wss://ws.mjg-tcg.cc`), in which case add a `fly certs add` cert, update
+  `VITE_SERVER_URL`, and redeploy the client.
 
 ---
 

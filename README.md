@@ -5,7 +5,7 @@ An online, multiplayer fan-made trading card game — a **rules-enforcing TypeSc
 rules (the engine handles turns, priority, and the chain), or drop into a free-form **Manual**
 mode for cards that aren't scripted yet.
 
-**▶ Play:** <https://mjgtcg.pages.dev> · **Server:** `wss://mjgtcg.fly.dev`
+**▶ Play:** <https://mjg-tcg.cc> · **Server:** `wss://mjgtcg.fly.dev`
 
 > Non-commercial fan project. Code is MIT-licensed; the card art and names are not — see
 > [Assets & license](#assets--license).
