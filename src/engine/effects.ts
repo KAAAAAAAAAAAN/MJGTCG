@@ -17,6 +17,7 @@ import { player, replace, valueOf, meldKind, canSpecialSummon, isBrick, isEffect
 import type { Seat } from "./rules.js";
 import { getSteps } from "./card-scripts.js";
 import { ACTIVATIONS } from "./legal.js";
+import { checkRestrictions } from "./restrictions.js";
 import { nextInt, shuffleWith } from "./rng.js";
 
 // ---- intents ----------------------------------------------------------------
@@ -581,6 +582,9 @@ export function applyIntent(state: GameState, intent: Intent, by?: Seat, source?
       return { state: s, result: iid };
     }
     case "meldFromDeckTop": {
+      // effect-driven special meld — blocked by "opponents cannot make melds" (KORO) too.
+      const meldBlock = checkRestrictions(state, { kind: "meld", player: intent.player });
+      if (meldBlock) return { state: replace(state, { log: [...state.log, `meld fizzled: ${meldBlock}`] }), result: null };
       const top = state.mainDeck.slice(0, intent.count);
       if (top.length < intent.count) return { state, result: null }; // not enough cards
       const kind = meldKind(top.map((iid) => valueOf(state, iid)));
@@ -609,6 +613,10 @@ export function applyIntent(state: GameState, intent: Intent, by?: Seat, source?
       return { state: s, result: null };
     }
     case "meldBoard": {
+      // "Opponents cannot make melds" (KORO "Iishanten Hell") etc.: a meld made by an
+      // effect is still a meld, so a restricted player's effect-meld fizzles like a Normal one.
+      const meldBlock = checkRestrictions(state, { kind: "meld", player: intent.player });
+      if (meldBlock) return { state: replace(state, { log: [...state.log, `meld fizzled: ${meldBlock}`] }), result: null };
       // an effect Normal Meld from specific board materials (any boards). A bad set
       // (a participant left play, a material is protected, or no valid meld) fizzles.
       if (intent.materials.some((m) => immuneFrom(state, m, by))) {

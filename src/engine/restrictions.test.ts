@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import * as M from "./reducer.js";
 import { checkRestrictions, RESTRICTIONS, REVEAL_EFFECTS } from "./restrictions.js";
+import { applyIntent } from "./effects.js";
 import { ACTIVATIONS } from "./legal.js";
 
 const { reduce: R, ActionType: AT, Phase: Ph, replace } = M;
@@ -99,6 +100,16 @@ describe("KORO 'Iishanten Hell': opponents cannot meld", () => {
     let s = build([[0, mk("koro", { cardId: "MJG-C03" })]]);
     s = replace(s, { activePlayer: 1, phase: Ph.MAIN_PHASE }); // p1's turn
     expect(() => R(s, { type: AT.MELD, player: 1, materials: ["a", "b", "c"] })).toThrow(/cannot make melds/);
+  });
+  it("also blocks an EFFECT meld (meldBoard) by an opponent — e.g. Copebots' Special Meld", () => {
+    const s = build([
+      [0, mk("koro", { cardId: "MJG-C03" })], // KORO on P0's board
+      [1, mk("a", { value: 2 })], [1, mk("b", { value: 2 })], [1, mk("c", { value: 2 })], // P1's would-be materials
+    ]);
+    const { state, result } = applyIntent(s, { kind: "meldBoard", player: 1, materials: ["a", "b", "c"] }, 1, "");
+    expect(result).toBeNull(); // the special meld fizzles instead of bypassing the lock
+    expect(M.player(state, 1).meldZone.length).toBe(0); // nothing melded
+    expect(state.log.some((l) => l.includes("Iishanten Hell"))).toBe(true);
   });
 });
 
