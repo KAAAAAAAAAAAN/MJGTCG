@@ -2097,6 +2097,7 @@ describe("MJG-044 Pon Yeehaw", () => {
     expect(sess.viewFor(0).choice?.numberInput).toEqual({ min: 1, max: 999 }); // "any ℕ"
     sess.choose(0, { use: true, value: 4 }); // even
     expect(M.valueOf(sess.state, "pon")).toBe(4);
+    expect(sess.state.log.some((l) => l.includes("Black or White") && l.includes("VALUE to 4"))).toBe(true); // the chosen VALUE is logged
     // the odd-VALUE characters queue as FAQ §9 forced discards, turn player first
     expect(sess.state.phase).toBe(M.Phase.FORCED_DISCARD);
     sess.command(0, { do: "discard", iid: "odd1" });

@@ -2884,8 +2884,13 @@ export class GameSession {
         const min = pr.min ?? 1, max = pr.max ?? 9;
         if (v === undefined || !Number.isInteger(v) || v < min || v > max) return { ok: false, error: `enter a number ${min}-${max}` };
         if (pr.toTargets) {
+          // Pon Yeehaw "Black or White": the chosen VALUE is public — log it so everyone
+          // sees which number was picked on summon (drives the opposite-parity discard).
+          const self = this.state.chain[pr.linkIdx]?.script?.self;
+          const who = self ? (this.state.instances[self]?.cardId ?? self) : "this card";
           this.state = M.replace(this.state, {
             chain: this.state.chain.map((l, i) => (i === pr.linkIdx && l.script ? { ...l, script: { ...l.script, targets: [String(v)] } } : l)),
+            log: [...this.state.log, `Black or White: player ${seat} sets ${who}'s VALUE to ${v}`],
           });
         } else {
           const pg = this.pendingGuess;
