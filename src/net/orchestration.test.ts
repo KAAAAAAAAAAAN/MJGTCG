@@ -2136,6 +2136,29 @@ describe("MJG-044 Pon Yeehaw", () => {
   });
 });
 
+describe("targeting: a character flipped face-down mid-chain is no longer valid", () => {
+  it("YUZU GRAPE's banish fizzles when Famous Fagat flips the target face-down first", () => {
+    const sess = new GameSession(
+      setup((p) => {
+        p("hand", 0, mk("grape", "MJG-77*")); // Correction: target a 1-DEF char, SS self, THEN banish it
+        p("hand", 1, mk("fagat", "MJG-M13")); // Trap Trick: flip target face-down + SS self
+        p("board", 1, mk("yuzu", "MJG-029")); // YUZU YUZU YUZU — 1/1/1, a valid (1 DEF) face-up target
+      }),
+    );
+    sess.setToggle(1, "auto"); // P1 reacts to P0's activation
+    sess.command(0, { do: "activate", iid: "grape", role: "top", targets: ["yuzu"] });
+    expect(sess.awaiting).toBe(1); // P1 gets the response window
+    sess.respond(1, { activate: { iid: "fagat", role: "top", targets: ["yuzu"] } });
+    // Chain resolves LIFO: Famous Fagat flips YUZU face-down (+ SS), then YUZU GRAPE
+    // SS's itself but its banish sees a now-face-down ("non-existing") target -> fizzles.
+    expect(sess.state.instances["yuzu"]?.faceDown).toBe(true);
+    expect(sess.state.banish).not.toContain("yuzu"); // NOT banished — the target went invalid
+    expect(M.player(sess.state, 1).board).toContain("yuzu"); // still on P1's board
+    expect(M.player(sess.state, 0).board).toContain("grape"); // YUZU GRAPE still summoned (non-target part resolves)
+    expect(M.player(sess.state, 1).board).toContain("fagat"); // Famous Fagat summoned
+  });
+});
+
 describe("MJG-045 Liyuean Opera", () => {
   it("top 'Ear Rape': on summon, all OTHER characters are stunned until their OWN owner's turn end", () => {
     const sess = new GameSession(

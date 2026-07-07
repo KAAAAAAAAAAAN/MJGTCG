@@ -16,6 +16,7 @@
 import { player, replace, valueOf, meldKind, canSpecialSummon, isBrick, isEffectImmune, soaImmune, cannotBeAttacked, matchmakerBonded, meldBoardCards, discardOrRedirect, pizzaHutCode, liveRedirect, mintInstance, cardData, chargePoison, abilityCardIds, assignBoardPos, Phase, type GameState, type ChainLink, type Battle } from "./reducer.js";
 import type { Seat } from "./rules.js";
 import { getSteps } from "./card-scripts.js";
+import { ACTIVATIONS } from "./legal.js";
 import { nextInt, shuffleWith } from "./rng.js";
 
 // ---- intents ----------------------------------------------------------------
@@ -1063,6 +1064,23 @@ export function runEffect(
  * false. Returns null for links with no runnable script (abstract test links / pure
  * trigger markers) so the reducer leaves them logged-only.
  */
+/**
+ * Re-validate a chain link's character targets at resolution. A character target
+ * that was flipped FACE-DOWN since it was chosen is "non-existing" and drops out —
+ * so the target-dependent part of the effect fizzles (scripts guard on ctx.targets),
+ * while non-target parts (e.g. "…and Special Summon this card") still resolve.
+ * Only `targetKind: "character"` effects re-validate; seat/number/deck/discard targets
+ * and appended non-character picks pass through (they have no faceDown), as do effects
+ * that intentionally target face-down cards (targetFaceDown).
+ */
+function liveTargets(state: GameState, script: NonNullable<ChainLink["script"]>): readonly string[] {
+  const raw = script.targets ?? [];
+  if (raw.length === 0) return raw;
+  const spec = ACTIVATIONS[`${script.cardId}:${script.role}`];
+  if (!spec || spec.targetKind !== "character" || spec.targetFaceDown) return raw;
+  return raw.filter((iid) => !state.instances[iid]?.faceDown);
+}
+
 export function resolveChainLink(
   state: GameState,
   link: ChainLink,
@@ -1076,7 +1094,7 @@ export function resolveChainLink(
   const next = runEffect(state, step.run, {
     controller: link.script.controller,
     self: link.script.self,
-    targets: link.script.targets ?? [],
+    targets: liveTargets(state, link.script),
     opt: link.script.opt ?? false,
     scratch,
   });
