@@ -252,21 +252,57 @@ export class GameRoom extends Room {
     });
   }
 
-  /** POST a bug report to the Discord webhook in DISCORD_BUG_WEBHOOK. When the env
-   *  var is unset (e.g. local dev) the report is just logged, so nothing crashes. */
+  /** Capture the authoritative game state for a bug report: a compact one-line
+   *  summary plus the full state serialized as JSON (attached to the report as a
+   *  file). Returns null in the lobby (no game yet) or if serialization fails. The
+   *  server state is complete (all hands, deck, RNG, chain) — far more useful for
+   *  debugging than the reporter's redacted client view. */
+  private snapshotState(): { name: string; json: string; summary: string } | null {
+    try {
+      if (this.session) {
+        const st = this.session.state;
+        return {
+          name: `state-${this.code}.json`,
+          json: JSON.stringify(st, null, 2),
+          summary: `game: auto · ${st.players.length}p · phase ${st.phase} · active P${st.activePlayer} · chain ${st.chain.length}`,
+        };
+      }
+      if (this.manual) {
+        const st = this.manual.state;
+        return { name: `state-${this.code}-manual.json`, json: JSON.stringify(st, null, 2), summary: `game: manual · ${st.players.length}p` };
+      }
+    } catch (e) {
+      console.error("[bug report] state snapshot failed:", e);
+    }
+    return null;
+  }
+
+  /** POST a bug report to the Discord webhook in DISCORD_BUG_WEBHOOK, attaching a
+   *  snapshot of the current game state as a .json file. When the env var is unset
+   *  (e.g. local dev) the report is just logged, so nothing crashes. */
   private async forwardBugReport(r: { code: string; roomId: string; seat: number; name: string; text: string }): Promise<void> {
     const who = r.seat === SPECTATOR ? "spectator" : `P${r.seat}`;
+    const snap = this.snapshotState();
     const header = `🐛 **Bug report** — room \`${r.code}\` (${r.roomId}) · ${r.name} [${who}]`;
-    const content = `${header}\n${r.text}`.slice(0, 2000);
+    const content = `${header}\n${snap ? snap.summary : "game: not started (lobby)"}\n${r.text}`.slice(0, 2000);
     const url = process.env.DISCORD_BUG_WEBHOOK;
-    if (!url) { console.log(`[bug report] (DISCORD_BUG_WEBHOOK not set)\n${content}`); return; }
+    if (!url) {
+      console.log(`[bug report] (DISCORD_BUG_WEBHOOK not set)\n${content}${snap ? `\n[state attached: ${snap.name}, ${snap.json.length} bytes]` : ""}`);
+      return;
+    }
     try {
-      // allowed_mentions parse:[] neutralises any @everyone/@here in the free text
-      const res = await fetch(url, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ content, allowed_mentions: { parse: [] } }),
-      });
+      // allowed_mentions parse:[] neutralises any @everyone/@here in the free text.
+      // When there's a state snapshot, upload it as a file via multipart (payload_json
+      // + files[0]); otherwise a plain JSON body. (Don't set Content-Type for FormData —
+      // fetch adds the multipart boundary itself.)
+      const payload = JSON.stringify({ content, allowed_mentions: { parse: [] } });
+      let form: FormData | null = null;
+      if (snap) {
+        form = new FormData();
+        form.append("payload_json", payload);
+        form.append("files[0]", new Blob([snap.json], { type: "application/json" }), snap.name);
+      }
+      const res = await fetch(url, form ? { method: "POST", body: form } : { method: "POST", headers: { "Content-Type": "application/json" }, body: payload });
       if (!res.ok) console.error(`[bug report] webhook POST failed: ${res.status} ${res.statusText}`);
     } catch (e) {
       console.error("[bug report] webhook error:", e);
